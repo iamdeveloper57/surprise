@@ -6,7 +6,7 @@ btn.addEventListener("click", () => {
   const name = document.querySelector("#name").value;
   const spouseName = document.querySelector("#spouse").value;
 
-  if (name === "ram" && spouseName === "ram") {
+  if (name === "Jenika" && spouseName === "Rehan") {
     name.value = "";
     spouseName.value = "";
     errorMessage.innerHTML = "";
