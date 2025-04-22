@@ -3,8 +3,8 @@ const errorMessage = document.querySelector(".error");
 const containers = document.querySelector(".container");
 
 btn.addEventListener("click", () => {
-  const name = document.querySelector("#name").value;
-  const spouseName = document.querySelector("#spouse").value;
+  const name = document.querySelector("#name").value.trim();
+  const spouseName = document.querySelector("#spouse").value.trim();
 
   if (name === "Jenika" && spouseName === "Rehan") {
     name.value = "";
@@ -16,8 +16,6 @@ btn.addEventListener("click", () => {
     localStorage.setItem("spouse", spouseName);
   } else {
     errorMessage.innerHTML = "worng please try again";
-    name.value = "";
-    spouseName.value = "";
   }
 });
 
